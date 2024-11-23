@@ -1,8 +1,13 @@
-import { MainPage } from "./pages/Main page/index.jsx";
+import AppRoutes from "@modules/router.jsx";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import Header from "@components/header";
+
 export default function App() {
   return (
-    <div className="h1">
-      <MainPage/>
-    </div>
+    <Router>
+      <Header />
+      <AppRoutes />
+    </Router>
   );
 }

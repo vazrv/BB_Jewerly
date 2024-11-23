@@ -1,7 +1,23 @@
-export const Button = ({ children }) => {
-    return (
-        <button className="border border-white rounded-md w-48 h-12 flex items-center justify-center py-2 pl-4 text-white">
-            {children}
-        </button>
-    );
+import React from "react";
+import clsx from "clsx";
+
+export const Button = ({
+  children,
+  className,
+  onClick = () => {
+    console.log("Skibidi");
+  },
+}) => {
+  return (
+    <button
+      onClick={onClick}
+      type="button"
+      className={clsx(
+        "flex h-12 w-48 items-center justify-center rounded-md border border-white px-4 py-2 text-white",
+        className,
+      )}
+    >
+      {children}
+    </button>
+  );
 };
