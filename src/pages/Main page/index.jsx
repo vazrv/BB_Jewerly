@@ -11,19 +11,21 @@ export const MainPage = () => {
         <>
             {/* бебра */}
             <Header />
-            <img src={mainPhoto} alt="" />
-            <div style={{ backgroundImage: `url(${mainPhoto})` }}>
-                <Button>Каталог</Button>
-            </div>
-            <div className="container mx-auto">
-                <div className="flex gap-5 justify-between">
-                    <Categories url={catalogPhoto} children={"Категория"} />
-                    <Categories url={icon} children={"Кулоны"} />
-                    <Categories url={catalogPhoto} children={"Серьги"} />
-                    <Categories url={catalogPhoto} children={"Категория"} />
-                    <Categories url={catalogPhoto} children={"Категория"} />
-                    <Products url={icon} children={"НАЧАЛЬНЫЙ КУЛОН"} price={"₽9000"} />
+            <div className="bg-cover bg-center h-[40rem]" style={{ backgroundImage: `url(${mainPhoto})` }}>
+                <div className="container mx-auto"></div>
+                <div className="flex flex-col items-center text-white">
+                    <h1 className="text-[2.25rem] font-regular">Осенний каталог</h1>
+                    <p className="text-[1.25rem] font-regular">Новая коллекция уже в продаже, ищите в каталоге</p>
+                    <Button className="">Каталог</Button>
                 </div>
+            </div>
+            <div className="flex gap-5 justify-between">
+                <Categories url={catalogPhoto} children={"Категория"} />
+                <Categories url={icon} children={"Кулоны"} />
+                <Categories url={catalogPhoto} children={"Серьги"} />
+                <Categories url={catalogPhoto} children={"Категория"} />
+                <Categories url={catalogPhoto} children={"Категория"} />
+                <Products url={icon} children={"НАЧАЛЬНЫЙ КУЛОН"} price={"₽9000"} />
             </div>
         </>
     )

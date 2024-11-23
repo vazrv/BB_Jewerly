@@ -24,7 +24,7 @@ const Header = () => {
                                 </li>
                             </ul>
                         </nav>
-                        <h1 className="text-[1.6875rem] font-regular">BB Jewerly</h1>
+                        <h1 className="text-[1.6875rem] font-regular postion-absolute ">BB Jewerly</h1>
                         <div className="flex gap-5 items-center">
                             <input type="text" placeholder="Поиск" className="border-[0.0625rem] border-black rounded-lg py-[0.3125rem] pl-4" />
                             <div className="flex gap-9 items-center">
