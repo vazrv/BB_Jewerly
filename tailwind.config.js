@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         mainColor: '#F5EBE0',
+        hoverColor: '#3069BB',
       },
       fontFamily: {
         karla: ['Karla', 'serif'],

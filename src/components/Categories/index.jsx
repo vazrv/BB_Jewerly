@@ -1,5 +1,5 @@
 export const Categories = ({ url, children }) => {
-  //ИСПОЛЬЗУЙ ЭТО ДЛЯ КАТЕГОРИИ
+  //КАТЕГОРИИ
   return (
     <div className="flex flex-col items-center">
       <img src={url} alt={url} className="rounded-t-lg" />
