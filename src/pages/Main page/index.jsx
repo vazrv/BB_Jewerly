@@ -114,7 +114,7 @@ export const MainPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex bg-black">
+      <div className="mb-big flex bg-black">
         <img src={imgMain[1]} alt="" />
         <div className="container mx-auto">
           <div className="p-20 text-white">
