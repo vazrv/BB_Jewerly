@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 
-function About() {
+export const About = () => {
   return (
     <div className="m-big text-center font-karla text-3xl font-thin">
       <p>
@@ -21,6 +21,4 @@ function About() {
       </p>
     </div>
   );
-}
-
-export default About;
+};

@@ -3,7 +3,7 @@ import React from "react";
 import ringImage from "@assets/photo/blog/ring.png";
 import cherryImage from "@assets/photo/blog/blog_cherry.png";
 
-function Blog() {
+export const Blog = () => {
   return (
     <div className="container m-16 mx-auto py-4 font-karla text-xl font-thin">
       <p>СТАТЬЯ • ОКТЯБРЬ 2024</p>
@@ -73,4 +73,3 @@ function Blog() {
   );
 }
 
-export default Blog;
