@@ -18,17 +18,19 @@ const Header = () => {
             <nav>
               <ul className="flex gap-9 text-[1.25rem]">
                 <li>
-                  <Link to="#">О нас</Link>
+                  <Link to="/about">О нас</Link>
                 </li>
                 <li>
-                  <Link to="#">Каталог</Link>
+                  <Link to="/catalog">Каталог</Link>
                 </li>
                 <li>
-                  <Link to="#">Блог</Link>
+                  <Link to="/blog">Блог</Link>
                 </li>
               </ul>
             </nav>
-            <h1 className="font-regular pl-36 text-[1.6875rem]">BB Jewerly</h1>
+            <h1 className="font-regular pl-36 text-[1.6875rem]">
+              <Link to="/">BB Jewerly</Link>
+            </h1>
             <div className="flex items-center gap-5">
               <div className="flex w-fit items-center justify-center rounded-lg border-[0.0625rem] border-black bg-transparent py-[0.3125rem] text-black">
                 <input

@@ -5,11 +5,8 @@ import { Categories } from "@components/Categories";
 import { Products } from "@components/Products";
 
 // Assets
-import catalogPhotoFirst from "@assets/photo/catalog/Rectangle 38.png";
-import catalogPhotoSecond from "@assets/photo/main/fifth.png";
 import icon from "@assets/photo/catalog/Frame 17-1.png";
 import mainPhoto from "@assets/photo/main/FirstFrameMain.jpg";
-
 import imgMain from "@assets/photo/main";
 
 export const MainPage = () => {
