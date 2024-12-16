@@ -2,12 +2,12 @@
 import { Button } from "@components/Button";
 import { BlackButton } from "@components/Button/index black";
 import { Categories } from "@components/Categories";
-import { Products } from "@components/Products";
 
 // Assets
 import icon from "@assets/photo/catalog/Frame 17-1.png";
 import mainPhoto from "@assets/photo/main/FirstFrameMain.jpg";
 import imgMain from "@assets/photo/main";
+import { Link } from "react-router-dom";
 
 export const MainPage = () => {
   const Categ = [
@@ -51,7 +51,9 @@ export const MainPage = () => {
           <p className="font-regular text-center font-karla text-[32px]">
             Новая коллекция уже в продаже, <br /> ищите в каталоге
           </p>
-          <Button>КАТАЛОГ</Button>
+          <Link to="Catalog">
+            <Button>КАТАЛОГ</Button>
+          </Link>
         </div>
       </div>
       <div className="mb-big">
@@ -63,11 +65,17 @@ export const MainPage = () => {
             </p>
           </div>
         </div>
-        <div className="mx-big flex justify-between gap-5">
-          {Categ.map((item) => (
-            <Categories key={item.id} url={item.url} children={item.children} />
-          ))}
-        </div>
+        <Link to="Catalog">
+          <div className="mx-big flex justify-between gap-5">
+            {Categ.map((item) => (
+              <Categories
+                key={item.id}
+                url={item.url}
+                children={item.children}
+              />
+            ))}
+          </div>
+        </Link>
       </div>
       <div className="mb-big flex bg-black">
         <img className="h-[39.875rem] w-[43.75rem]" src={imgMain[5]} alt="" />
@@ -88,7 +96,9 @@ export const MainPage = () => {
               стоимость.
             </p>
           </div>
-          <Button>БЛОГ</Button>
+          <Link to="Blog">
+            <Button>БЛОГ</Button>
+          </Link>
         </div>
       </div>
       <div className="container mx-auto">
@@ -104,7 +114,9 @@ export const MainPage = () => {
                   анимализма (белочки, лисы, мышки и другие обитатели осеннего
                   леса), могут добавить уникальный и сезонный оттенок в подарок.
                 </p>
-                <BlackButton>КАТАЛОГ</BlackButton>
+                <Link to="Catalog">
+                  <BlackButton>КАТАЛОГ</BlackButton>
+                </Link>
               </div>
             </div>
             <img className="h-[448px] w-[588px]" src={imgMain[6]} alt="" />
@@ -133,7 +145,9 @@ export const MainPage = () => {
                 оригинальных и трендовых аксессуаров.
               </p>
             </div>
-            <Button>ПРО НАС</Button>
+            <Link to="About">
+              <Button>ПРО НАС</Button>
+            </Link>
           </div>
         </div>
       </div>

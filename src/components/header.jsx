@@ -41,13 +41,13 @@ const Header = () => {
                 <img src={search} alt="" className="mr-2" />
               </div>
               <div className="flex items-center gap-9">
-                <Link to="">
+                <Link to="/favorite">
                   <img src={like} alt="" className="ml-4" />
                 </Link>
-                <Link to="">
+                <Link to="/card">
                   <img src={cart} alt="" />
                 </Link>
-                <Link to="">
+                <Link to="/profile">
                   <img src={profile} alt="" className="pb-1" />
                 </Link>
               </div>
