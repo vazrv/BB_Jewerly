@@ -6,3 +6,4 @@ export { Card } from "./card";
 export { Profile } from "./profile";
 export { Cart } from "./cart";
 export { Catalog } from "./catalog";
+export { Complete } from "./complete";

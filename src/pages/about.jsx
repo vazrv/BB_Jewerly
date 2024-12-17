@@ -1,6 +1,3 @@
-// libs
-import React from "react";
-
 export const About = () => {
   return (
     <div className="m-big text-center font-karla text-3xl font-thin">

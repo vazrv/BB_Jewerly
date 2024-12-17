@@ -45,7 +45,7 @@ export const Cart = () => {
       <div className="flex">
         <img className="h-[28.125rem] w-[25.5rem]" src={cartPhoto} alt="" />
         <div className="w-[600px] mb-20 ml-60">
-          <p className="font-karla text-[#515151]">ВЕРНУТЬСЯ К ВЫБОРУ</p>
+          <Link to="/catalog"><p className="font-karla text-[#515151]">ВЕРНУТЬСЯ К ВЫБОРУ</p></Link>
           <div className="flex justify-between mt-5">
             <p className="font-cormorantSC text-3xl">СЕРДЕЧНЫЙ КУЛОН</p>
             <Link to="#"><img className="transition duration-300 ease-in-out hover:scale-110" src={BigLike} alt="" /></Link>

@@ -9,6 +9,7 @@ import {
   Profile,
   Catalog,
   Cart,
+  Complete
 } from "@pages";
 
 const AppRoutes = () => {
@@ -22,6 +23,7 @@ const AppRoutes = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/catalog" element={<Catalog />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/complete" element={<Complete />} />
     </Routes>
   );
 };
