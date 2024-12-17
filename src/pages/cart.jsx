@@ -41,45 +41,54 @@ export const Cart = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-big">
-      <div className="flex">
-        <img className="h-[28.125rem] w-[25.5rem]" src={cartPhoto} alt="" />
-        <div className="w-[600px] mb-20 ml-60">
-          <Link to="/catalog"><p className="font-karla text-[#515151]">ВЕРНУТЬСЯ К ВЫБОРУ</p></Link>
+    <div className="container mx-auto mt-big px-4">
+      <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
+        {/* Изображение товара */}
+        <img className="w-full md:w-[25.5rem] h-auto" src={cartPhoto} alt="" />
+
+        {/* Информация о товаре */}
+        <div className="w-full md:w-[600px] mb-20 mt-6 md:mt-0 md:ml-60">
+          <Link to="/catalog">
+            <p className="font-karla text-[#515151]">ВЕРНУТЬСЯ К ВЫБОРУ</p>
+          </Link>
           <div className="flex justify-between mt-5">
-            <p className="font-cormorantSC text-3xl">СЕРДЕЧНЫЙ КУЛОН</p>
-            <Link to="#"><img className="transition duration-300 ease-in-out hover:scale-110" src={BigLike} alt="" /></Link>
+            <p className="font-cormorantSC text-3xl text-center md:text-left">СЕРДЕЧНЫЙ КУЛОН</p>
+            <Link to="#">
+              <img className="transition duration-300 ease-in-out hover:scale-110" src={BigLike} alt="" />
+            </Link>
           </div>
-          <p style={{ color: 'rgba(0, 0, 0, 0.54)' }} className="font-karla text-bold text-2xl mt-5">₽9000</p>
-          <p className="font-karla text-[1.25rem] w-4/5 mt-5">
+          <p style={{ color: 'rgba(0, 0, 0, 0.54)' }} className="font-karla font-bold text-2xl mt-5 text-center md:text-left">₽9000</p>
+          <p className="font-karla text-[1.25rem] w-full md:w-4/5 mt-5 text-center md:text-left">
             Форма и размер подвесок сердца могут варьироваться от небольших и
             минималистичных до крупных и более декоративных. Небольшие модели
             идеальны для ежедневного ношения и подчеркивают изящность, в то время
             как более крупные и украшенные модели лучше подходят для
             специальных случаев.
           </p>
-          <BlackButton className="mt-10">В КОРЗИНУ</BlackButton>
+          <BlackButton className="mt-10 w-full ">В КОРЗИНУ</BlackButton>
         </div>
       </div>
+
       <hr />
-      <div>
-        <div className="my-7 text-center">
-          <p className="font-cormorantSC text-2xl">Рекомендовано вам</p>
-          <p className="font-karla text-[1.10rem] text-[#515151]">на основе вашего поиска</p>
-        </div>
-        <Link to="/Catalog">
-          <div className="mb-big flex justify-between">
-            {Categ.map((item) => (
-              <Products
-                key={item.id}
-                url={item.url}
-                children={item.children}
-                price={item.price}
-              />
-            ))}
-          </div>
-        </Link>
+
+      {/* Рекомендации */}
+      <div className="my-7 text-center">
+        <p className="font-cormorantSC text-2xl">Рекомендовано вам</p>
+        <p className="font-karla text-[1.10rem] text-[#515151]">на основе вашего поиска</p>
       </div>
+
+      <Link to="/Catalog">
+        <div className="mb-big grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          {Categ.map((item) => (
+            <Products
+              key={item.id}
+              url={item.url}
+              children={item.children}
+              price={item.price}
+            />
+          ))}
+        </div>
+      </Link>
     </div>
   );
 };
