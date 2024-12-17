@@ -38,8 +38,9 @@ export const CatalogBlock = () => {
 
   return (
     <Link to="/Cart">
-      <div>
-        <div className="mb-3 flex justify-between">
+      <div className="flex flex-col items-center justify-center">
+        {/* Flexbox для мобильных и десктопных экранов */}
+        <div className="mb-3  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 justify-center">
           {Categ.map((item) => (
             <div
               key={item.id}
@@ -58,7 +59,9 @@ export const CatalogBlock = () => {
             </div>
           ))}
         </div>
-        <div className="mb-big flex justify-between">
+
+        {/* Еще один блок карточек, адаптивно в колонку */}
+        <div className="mb-big grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 justify-center">
           {Categ.map((item) => (
             <div
               key={item.id}

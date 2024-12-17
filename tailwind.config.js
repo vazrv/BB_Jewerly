@@ -4,17 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
-        mainColor: '#F5EBE0',
-        hoverColor: '#3069BB',
+        mainColor: "#F5EBE0",
+        hoverColor: "#3069BB",
       },
       fontFamily: {
-        karla: ['Karla', 'serif'],
-        crimson: ['Crimson Pro', 'serif'],
-        cormorantSC: ['Cormorant SC', 'serif'],
-        cormorantGaramond: ['Cormorant Garamond Static', 'serif'],
+        karla: ["Karla", "serif"],
+        crimson: ["Crimson Pro", "serif"],
+        cormorantSC: ["Cormorant SC", "serif"],
+        cormorantGaramond: ["Cormorant Garamond Static", "serif"],
       },
       margin: {
-        big: '75px',
+        big: "75px",
       },
     },
   },

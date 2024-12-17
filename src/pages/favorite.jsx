@@ -29,13 +29,17 @@ export const Favorite = () => {
       price: "8 000₽",
     },
   ];
+
   return (
-    <div className="container mx-auto">
-      <h1 className="m-[3.125rem] text-center font-karla text-4xl">
+    <div className="container mx-auto px-4">
+      {/* Заголовок */}
+      <h1 className="my-10 text-center font-karla text-2xl md:text-4xl">
         Избранное
       </h1>
+
+      {/* Карточки */}
       <Link to="/Cart">
-        <div className="mb-big flex justify-between">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {Categ.map((item) => (
             <Products
               key={item.id}
