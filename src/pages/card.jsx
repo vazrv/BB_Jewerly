@@ -52,12 +52,12 @@ export const Card = () => {
               <div key={index} className="flex flex-col md:flex-row items-center">
                 <img src={chainImage} alt="item" className="w-1/2 md:w-auto" />
                 <div className="ml-0 md:ml-10 mt-4 md:mt-0">
-                  <div className="flex justify-between font-karla">
-                    <p className="text-2xl text-[#515151]">{`Начальный кулон`}</p>
+                  <span className="flex justify-between font-karla">
+                    <p className="text-2xl text-[#515151] mr-4 lg:mr-28">{`Начальный кулон`}</p>
                     <img className="cursor-pointer" src={trash} alt="trash" />
-                  </div>
+                  </span>
                   <p className="text-xl text-[#7E7E7E]">Количество: 1</p>
-                  <p className="text-xl text-[#8A8A8A] mt-4">₽9000</p>
+                  <p className="text-xl text-[#8A8A8A] mt-4 lg:mt-40">₽9000</p>
                 </div>
               </div>
             ))}
@@ -94,7 +94,7 @@ export const Card = () => {
         <p className="font-cormorantSC text-2xl my-7 text-center">Позвольте себе больше</p>
         <hr className="mb-8" />
         <Link to="/Catalog">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="w-[50%] lg:w-auto mx-auto grid grid-cols-1 mb-big sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {Categ.map((item) => (
               <Products
                 key={item.id}

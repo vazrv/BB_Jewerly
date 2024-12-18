@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="m-big text-center font-karla text-3xl font-thin">
+    <div className="m-big text-center font-karla text-2xl font-thin">
       <p>
         Компания "BB Jewelry" — это бренд украшений, созданных вручную. Большую
         часть коллекции составляют изделия с натуральными камнями, выполненные в
