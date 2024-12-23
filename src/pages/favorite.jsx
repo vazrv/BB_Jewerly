@@ -39,7 +39,7 @@ export const Favorite = () => {
 
       {/* Карточки */}
       <Link to="/Cart">
-        <div className="grid grid-cols-1 gap-6 mb-big sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <div className="w-2/3 mx-auto lg:w-full grid grid-cols-1 gap-6 mb-big sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {Categ.map((item) => (
             <Products
               key={item.id}

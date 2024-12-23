@@ -37,7 +37,7 @@ const Header = () => {
                 placeholder="Поиск"
                 className="w-full bg-transparent px-2 font-karla placeholder-[#727272] placeholder:font-sans outline-none lg:w-[10rem]"
               />
-              <img src={search} alt="" className="mr-2" />
+              <img src={search} alt="" className="mr-2 cursor-pointer" />
             </div>
             <div className="flex items-center gap-4 lg:gap-9">
               <Link to="/favorite">

@@ -78,7 +78,7 @@ export const Cart = () => {
       </div>
 
       <Link to="/Catalog">
-        <div className="mb-big grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+        <div className="mb-big w-2/3 mx-auto lg:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-6">
           {Categ.map((item) => (
             <Products
               key={item.id}

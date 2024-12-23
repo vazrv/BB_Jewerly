@@ -50,7 +50,7 @@ export const Card = () => {
           <div className="pt-12 space-y-12">
             {[...Array(2)].map((_, index) => (
               <div key={index} className="flex flex-col md:flex-row items-center">
-                <img src={chainImage} alt="item" className="w-1/2 md:w-auto" />
+                <img src={chainImage} alt="item" className="w-[60%] md:w-auto" />
                 <div className="ml-0 md:ml-10 mt-4 md:mt-0">
                   <span className="flex justify-between font-karla">
                     <p className="text-2xl text-[#515151] mr-4 lg:mr-28">{`Начальный кулон`}</p>
@@ -89,12 +89,11 @@ export const Card = () => {
         </div>
       </div>
 
-      {/* Блок с карточками товаров */}
       <div>
         <p className="font-cormorantSC text-2xl my-7 text-center">Позвольте себе больше</p>
         <hr className="mb-8" />
         <Link to="/Catalog">
-          <div className="w-[50%] lg:w-auto mx-auto grid grid-cols-1 mb-big sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="w-2/3 lg:w-auto mx-auto grid grid-cols-1 mb-big sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {Categ.map((item) => (
               <Products
                 key={item.id}

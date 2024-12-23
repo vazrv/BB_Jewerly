@@ -82,10 +82,12 @@ const Footer = () => {
                 <button className="px-4 text-[#727272]">Отправить</button>
               </div>
               <div className="flex justify-between">
-                <FaInstagram size={25} />
-                <FaTwitter size={25} />
-                <FaYoutube size={25} />
-                <FaLinkedin size={25} />
+                <Link to="#">
+                  <FaInstagram size={25} />
+                </Link>
+                <Link to="#"><FaTwitter size={25} /></Link>
+                <Link to="#"><FaYoutube size={25} /></Link>
+                <Link to="#"><FaLinkedin size={25} /></Link>
               </div>
             </div>
           </nav>
