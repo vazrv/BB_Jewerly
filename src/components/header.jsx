@@ -16,13 +16,13 @@ const Header = () => {
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <nav className="mb-4 lg:mb-0">
             <ul className="flex gap-4 text-lg lg:gap-9 lg:text-[1.25rem]">
-              <li>
+              <li className="transition duration-300 hover:font-bold">
                 <Link to="/about">О нас</Link>
               </li>
-              <li>
+              <li className="transition duration-300 hover:font-bold">
                 <Link to="/catalog">Каталог</Link>
               </li>
-              <li>
+              <li className="transition duration-300 hover:font-bold">
                 <Link to="/blog">Блог</Link>
               </li>
             </ul>
