@@ -2,9 +2,9 @@
 import { Button } from "@components/Button";
 import { BlackButton } from "@components/Button/index black";
 import { Categories } from "@components/Categories";
+import { motion } from "framer-motion";
 
 // Assets
-import icon from "@assets/photo/catalog/Frame 17-1.png";
 import mainPhoto from "@assets/photo/main/FirstFrameMain.jpg";
 import imgMain from "@assets/photo/main";
 import { Link } from "react-router-dom";
@@ -93,7 +93,7 @@ export const MainPage = () => {
         />
         <div className="container mx-auto w-full md:w-[600px] p-4 md:p-0">
           <div className="flex flex-col text-white">
-            <p className="py-4 md:py-10 font-karla text-[14px] md:text-[1.1875rem]">
+            <p className="py-4 md:py-10 font-karla text-[14px] md:text-[1.1875rem] ">
               СТАТЬЯ • ОКТЯБРЬ 2024
             </p>
             <p className="py-2 md:py-6 font-cormorantSC text-[1.5rem] md:text-[2.1875rem]">
