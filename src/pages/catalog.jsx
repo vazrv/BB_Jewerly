@@ -1,6 +1,6 @@
 import { CatalogBlock } from "@/components/CatalogBlock";
 import { useQuery } from "@tanstack/react-query";
-import { getProducts } from "@/services/products";
+import { fetchProducts } from "@/services/products";
 
 const CATEGORIES = [
   "Ожерелья",
@@ -25,14 +25,14 @@ export const Catalog = () => (
 const CategorySection = ({ category, isLast }) => {
   const { data: allProducts, isLoading, error } = useQuery({
     queryKey: ['products'],
-    queryFn: getProducts,
+    queryFn: fetchProducts,
     staleTime: 60 * 1000,
   });
 
-  // Фильтруем продукты по категории
-  const products = allProducts?.filter(product => 
-    product.category === category
-  ) || [];
+  const products = Array.isArray(allProducts)
+    ? allProducts.filter(product => product.category === category)
+    : []; // Если allProducts не массив, возвращаем пустой массив
+
 
   return (
     <div className="mb-12">
